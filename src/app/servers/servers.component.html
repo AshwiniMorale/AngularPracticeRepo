@@ -1,2 +1,10 @@
 <h3>servers component!</h3>
+<!-- this is property binding -->
+<button
+    class="btn btn-primary"
+    [disabled]= "!allowNewServer" 
+    (click)= "onServerCreate()">Add servers
+</button>
+<!-- this is string interpolation -->
+<p>{{ servercreatedStatus }}</p>
 <aap-server><aap-server>
